@@ -4,9 +4,9 @@ SEOTitle:  Yongchao Blog
 header-img: img/post-bg-desk.jpg
 email: yongchao.wu.kth@gmail.com
 description: "Lanuage is what you use everyday."
-url: "http://yongchao.github.io"          # your host, for absolute URL
+url: "http://yonwu.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com:yonwu/yongchao.github.io.git" # you code repository
+github_repo: "https://github.com:yonwu/yonwu.github.io.git" # you code repository
 
 # Sidebar settings
 # SNS settings
