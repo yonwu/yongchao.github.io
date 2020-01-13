@@ -4,7 +4,7 @@ SEOTitle:  Yongchao Blog
 header-img: img/post-bg-desk.jpg
 email: yongchao.wu.kth@gmail.com
 description: "Lanuage is what you use everyday."
-url: "http://yongchao.tech"          # your host, for absolute URL
+url: "http://yongchao.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com:yonwu/yongchao.tech.git" # you code repository
 
@@ -32,7 +32,6 @@ exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
 
-
 # Gems
 # from PR#40, to support local preview for Jekyll 3.0
 gems: [jekyll-paginate]
@@ -48,21 +47,6 @@ markdown: kramdown
 highlighter: rouge
 kramdown:
   input: GFM                            # use Github Flavored Markdown !important
-
-
-
-# 评论系统
-# Disqus（https://disqus.com/）
-# disqus_username: qiubaiying
-
-# Gitalk
-
-
-
-
-
-
-
 
 
 # Featured Tags
