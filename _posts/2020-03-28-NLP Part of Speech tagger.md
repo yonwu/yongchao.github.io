@@ -27,8 +27,8 @@ learning algorithms, parameters and hyperparameters
 
 For simple RNN, suppose we have a sequence of input is 
 $$w_1...w_t...w_T$$, at time step $$t$$ , the hidden layer activation value
-$$h_t$$ depens on the current input $x_t$ and the hidden layer activation
-value at previous time step $t-1$ with $g$ as activation function:
+$$h_t$$ depens on the current input $$x_t$$ and the hidden layer activation
+value at previous time step $$t-1$$ with $g$ as activation function:
 
 $$h_t = g(Uh_{t-1} + Wx_t)$$ 
 
