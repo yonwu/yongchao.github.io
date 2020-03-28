@@ -13,8 +13,6 @@ sidebar: true
 sidebar-about-description: "Record some though in life and study."
 sidebar-avatar: /img/yongchao.jpg
 # SNS settings
-
-
 RSS: false
 github_username: yonwu
 zhihu_username: devinwoo
@@ -46,6 +44,11 @@ markdown: kramdown
 highlighter: rouge
 kramdown:
   input: GFM                            # use Github Flavored Markdown !important
+
+
+# Comments system
+# Disqus（https://disqus.com/）
+disqus_username: wuyongchao
 
 
 # Google Analytics
