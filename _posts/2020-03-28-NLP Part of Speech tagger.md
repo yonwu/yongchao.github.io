@@ -28,7 +28,7 @@ learning algorithms, parameters and hyperparameters
 For simple RNN, suppose we have a sequence of input is 
 $$w_1...w_t...w_T$$, at time step $$t$$ , the hidden layer activation value
 $$h_t$$ depens on the current input $$x_t$$ and the hidden layer activation
-value at previous time step $$t-1$$ with $g$ as activation function:
+value at previous time step $$t-1$$ with $$g$$ as activation function:
 
 $$h_t = g(Uh_{t-1} + Wx_t)$$ 
 
@@ -44,7 +44,7 @@ $$y_t = softmax(Vh_t)$$
 
 where, $$W, U, V$$ are
 weight matrix that are shared across time. Thus, the model should learn
-U, V, W of the network from the training data. The process of learning
+$$U, V, W$$ of the network from the training data. The process of learning
 these weight matrixes is similar to Neural Network: through a loss
 function and backpropagation(gradients descent) to adjust weights in the
 simple RNN network.
@@ -60,10 +60,14 @@ The first gate that we have is a \"forget gate\". Its purpose is to
 erase some context information. Specifically, it will process the
 previous hidden layer and current input through extra weights and
 sigmoid to get the \"gate vector\" output and then multiply it by
-context vector to remove unnecessary information. $$\begin{aligned}
+context vector to remove unnecessary information. 
+
+$$\begin{aligned}
  &forget_t = \sigma(U_{forgeth}h{t-1} + W_{forget}x_t) \\
  &k_t = c_{t-1} forget_t
-\end{aligned}$$ Next, the job is to compute the information from
+\end{aligned}$$ 
+
+Next, the job is to compute the information from
 previous hidden state and current inputs, and then multiply by a \"add
 gate\" to add the information into current context:
 
