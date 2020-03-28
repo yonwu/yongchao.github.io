@@ -25,13 +25,24 @@ management mechanism.
 learning algorithms, parameters and hyperparameters
 ---------------------------------------------------
 
-For simple RNN, suppose we have a sequence of input is
-$w_1...w_t...w_T$, at time step $t$, the hidden layer activation value
-$h_t$ depens on the current input $x_t$ and the hidden layer activation
+For simple RNN, suppose we have a sequence of input is 
+$$w_1...w_t...w_T$$, at time step $$t$$ , the hidden layer activation value
+$$h_t$$ depens on the current input $x_t$ and the hidden layer activation
 value at previous time step $t-1$ with $g$ as activation function:
-$$h_t = g(Uh_{t-1} + Wx_t)$$ and the output vector with $f$ as
-activation function is: $$y_t = f(Vh_t)$$ to apply the softmax function
-over the output vector: $$y_t = softmax(Vh_t)$$ where, $W, U, V$ are
+
+$$h_t = g(Uh_{t-1} + Wx_t)$$ 
+
+and the output vector with $f$ as
+activation function is: 
+
+$$y_t = f(Vh_t)$$ 
+
+to apply the softmax function
+over the output vector: 
+
+$$y_t = softmax(Vh_t)$$ 
+
+where, $$W, U, V$$ are
 weight matrix that are shared across time. Thus, the model should learn
 U, V, W of the network from the training data. The process of learning
 these weight matrixes is similar to Neural Network: through a loss
@@ -61,8 +72,12 @@ $$\begin{aligned}
  &add_t = \sigma(U_{add}h_{t-1} + W_{add}x_t) \\
  &j_t = g_{t} add_t \\
  &c_t = j_t + k_t
-\end{aligned}$$ Next, another \"output gate\" is added to control the
-output information for the current hidden state: $$\begin{aligned}
+\end{aligned}$$ 
+
+Next, another \"output gate\" is added to control the
+output information for the current hidden state: 
+
+$$\begin{aligned}
  &output_t = \sigma(U_{outputh}h{t-1} + W_{output}x_t) \\
  &h_t = output_{t} \tanh(c_t)
 \end{aligned}$$
@@ -76,9 +91,13 @@ similar to simple RNN, through a loss function and backpropagation
 
 After understanding the learning algorithms, the parameters and
 hyperparameters are then easier to explain. The parameters of the LSTM
-tagger are: $$\begin{aligned}
+tagger are: 
+
+$$\begin{aligned}
 U, W, V, U_{forget}, W_{forget}, U_{add}, W_{add}, U_{output}, W_{output}
-\end{aligned}$$ the hyperparameters are those that can be tuned to get a
+\end{aligned}$$ 
+
+the hyperparameters are those that can be tuned to get a
 better accuracy, like EMBEDDING dimension, HIDDEN dimension loss
 function, regularization and so on.
 
@@ -87,7 +106,9 @@ LSTM tagger prediction algorithms
 
 The training process is complex, meanwhile the prediction of LSTM is
 similar to regular multiclass classification job. Given a learned
-network, we can follow the process below: $$h_t = g(Uh_{t-1} + Wx_t)$$
+network, we can follow the process below: 
+
+$$h_t = g(Uh_{t-1} + Wx_t)$$
 
 $$y_t = f(Vh_t)$$
 
