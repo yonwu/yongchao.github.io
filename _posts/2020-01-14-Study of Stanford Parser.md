@@ -3,7 +3,7 @@ layout:     post
 title:      A brief study of Stanford Parser in Stanford NLP
 date:       2020-01-14
 author:     Yongchao Wu
-header-img: img/post-mian.jpg
+header-img: img/home-bg-tv.jpg
 catalog: true
 
 ---
