@@ -3,7 +3,7 @@ layout:     post
 title:      A brief Introduction of LSTM Based Tagger
 date:       2020-03-28
 author:     Yongchao Wu
-header-img: img/post-bg-cook.jpg
+header-img: img/post-mian.jpg
 catalog: true
 
 ---
