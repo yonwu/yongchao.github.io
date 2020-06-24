@@ -1,9 +1,12 @@
+---
 layout:     post
 title:      Optimization in Deep Learning
 date:       2020-06-24
 author:     Yongchao Wu
 header-img: img/post-main.jpg
 catalog: true
+
+---
 
 Optimization concept
 =================
