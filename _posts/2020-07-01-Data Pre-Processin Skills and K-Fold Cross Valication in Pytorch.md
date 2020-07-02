@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Data pre-processing skills and K-Fold cross validation in Pytorch
+title:      Data Pre-Processing Skills and K-Fold Cross Validation in Pytorch
 date:       2020-07-01
 author:     Yongchao Wu
 header-img: img/post-main.jpg
