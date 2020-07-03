@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Pytorch Neural Networks
+title:      Pytorch Basic Neural Networks
 date:       2020-06-30
 author:     Yongchao Wu
 header-img: img/post-main.jpg
